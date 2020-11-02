@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Room reservation</title>
+	<link rel="stylesheet" type="text/css" href="book.css">
+    <script src="https://kit.fontawesome.com/6ace5924bd.js" crossorigin="anonymous"></script>
+    <style>
+         ul {
+        /*border-radius: 15px;*/
+        list-style-type: none;
+        margin: 0;
+        padding: 12px;
+        overflow: hidden;
+        background-color:rgb(38, 150, 38);
+        background-image: linear-gradient(to right, green , yellow); 
+      }
+   
+      li {
+        float: left;
+      }
+   
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        /*14px 16px 17px 18px   ( top , right, bottom, left)*/
+        text-decoration: none;
+      }
+   
+      li a:hover {
+        background-color: #125;
+      }
+      body{
+       background-color: rgba(255, 248, 220, 0.63);
+   }
+
+ 
+    </style>
+</head>
+<body>
+    <img src="images/Screenshot 2020-11-01 113949.jpg">
+    <ul>
+        <li><a href="index(2).html"><b>HOME</b></a></li>
+        <li><a href="Sports.html"><b>SPORTS</b></a></li>
+        <li><a href="venues.html"><b>VENUES</b></a></li>
+        <li><a href="tally.html"><b>MEDAL TALLY</b></a></li>
+        <li><a class="active" href="#home"><b>BOOK A VENUE</b></a></li>
+        <li><a href="About.html"><b>ABOUT</b></a></li>
+      </ul>
+
+		<div class="container">
+			<div class="heading">
+				<i class="fas fa-calendar-alt"></i>
+				Book A Venue
+			</div>
+			<form class="form-input" onSubmit="return validate()" action="shinde.html">
+				<div class="one-box">
+					<label for="name">Please Enter Your Name</label>
+					<br/>
+					<input id="name" type="text" name="name" placeholder="&#xF007;  Amartya Dixit" required style="font-family:Arial, FontAwesome">
+				</div>
+				<br/>
+				<div class="two-input">
+					<label for="email">
+						Email Address
+					</label>
+					<br/>
+					<input id="email" type="email" name="email" placeholder="&#xf0e0;   Email Address" style="font-family:Arial, FontAwesome" required>
+				</div>
+				<div class="two-input">
+					<label for="mobile">
+						Telephone/Mobile
+					</label>
+					<br/>
+					<input id="tel" type="text" name="mobile" placeholder="&#xf879;   Telephone/Mobile Number" pattern="[0-9]{10}" style="font-family:Arial, FontAwesome" required>
+				</div>
+				<br/>
+				<div class="two-input">
+					<label for="adults">
+						venues
+					</label>
+					<br/>
+					<select required style="font-family:Arial, FontAwesome">
+						<option>&#xf0c0; Maracana Stadium</option>
+						<option>&#xf0c0; Olympic Stadium</option>
+						<option>&#xf0c0; Olympic tennis Centre</option>
+						<option>&#xf0c0; </option>
+					</select>
+				</div>
+				<div class="two-input">
+					<label for="children">
+						Number of Person
+					</label>
+					<br/>
+					<select  style="font-family:Arial, FontAwesome" required>
+						<option>&#xf0c0; one</option>
+						<option>&#xf0c0; two</option>
+						<option>&#xf0c0; three</option>
+						<option>&#xf0c0; more than three</option>
+					</select>
+				</div>
+				<br/>
+				<div class="two-input">
+					<label for="Date">
+						 Date
+					</label>
+					<br/>
+					<input type="Date" name="Date" required>
+				</div>
+				<!-- <div class="two-input">
+					<label for="Expiry date">
+			            Expiry Date
+					</label>
+					<br/>
+					<input type="Date" name="Expiry date" >
+				</div> -->
+				<br/>
+				<div class="btn-sub">
+						<input id="button-submit" type="submit" name="submit" required>
+				</div>
+				<div class="footer">
+					<span>
+						PLEASE ANSWER THESE QUESTIONS FOR A PLEASANT STAY
+					</span>
+				</div>
+			</form>
+		</div>
+        <!-- <script type="text/javascript" src="book.js"></script> -->
+        <footer id="book1">
+
+            <p style="font-size: large;">Prepared by : Amartya Dixit</p>
+            <div>
+              <span style="font-size: large;">For more, you can contact at - </span> <a href="mailto:amartyadixit02@gmail.com"><button><span
+                    class="material-icons">email</span></button></a>
+          </footer>
+    
+</body>
+</html>
