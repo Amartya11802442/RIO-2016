@@ -9,26 +9,30 @@
       margin: 0;
       padding: 12px;
       overflow: hidden;
-      background-color: #333;
-      background-image: linear-gradient(to right, green , yellow);
+      background-color:white;
+      font-family:sans-serif ;
     }
 
     li {
-      float: left;
+      float: right;
     }
 
     li a {
       display: block;
-      color: white;
+      color: black;
       text-align: center;
       padding: 14px 16px;
       /*14px 16px 17px 18px   ( top , right, bottom, left)*/
       text-decoration: none;
     }
-
-    li a:hover {
-      background-color: rgba(55, 84, 172, 0.911);
+    a:active {
+      background-color: green;
     }
+
+    /*li a:hover {
+      background-color: rgba(118, 121, 131, 0.911);
+      } */
+    
 
     .d {
       margin-left: 75px;
@@ -40,7 +44,7 @@
       height: 320px;
       position: absolute;
       top: 500px;
-      left: 40px;
+      left: 60px;
       /*border-radius: 25px;*/
       /* border-color:10px sol; */
 
@@ -64,8 +68,7 @@
       padding: 15px;
       text-align: center;
       /* opacity: .8; */
-      background-color: rgba(57, 214, 25, 0.699);
-      background-image: linear-gradient(to right, green , yellow);
+      background-color:#ddd; 
       /* border: solid; */
       /* border-radius: 15px; */
     }
@@ -73,21 +76,25 @@
 </head>
 
 <body>
-  <img src="images/Screenshot 2020-11-01 113949.jpg">
+  <a href="https://www.olympic.org/">
+  <img src="images/Screenshot 2020-11-01 113949.jpg"> </a>
   <ul>
-    <li><b><a class="active" href="#home">HOME</a></b></li>
-    <li><b><a href="Sports.html">SPORTS</a></b></li>
+    <li><b><a class="active" href="About.html">ABOUT</a></b></li>
     <li><b><a href="venues.html">VENUES</a></b></li>
-    <li><b><a href="tally.html">MEDAL TALLY</a></b></li>
     <li><b><a href="book.html">BOOK A TICKET</a></b></li>
-    <li><b><a href="About.html">ABOUT</a></b></li>
+    <li><b><a href="medal-tally.html">MEDAL TALLY</a></b></li>
+    <li><b><a href="athletes.html">ATHLETES</a></b></li>
+    <li><b><a href="teams">TEAMS</a></b></li>
+    <li><b><a href="listofsports.html">SPORTS</a></b></li>
+    <li><b><a href="index(2).html">HOME</a></b></li>
   </ul>
+  <hr>
   <br>
   <div>
     <!-- <img src="images/Main-Image.jpg"> -->
   </div>
   <br>
-  <div>
+  <div id="v1">
       <video width="1324px" controls autoplay muted loop>
       <source src="video/fire-works.mp4" type="video/mp4">
       </video>
@@ -102,10 +109,14 @@
     <h1 style="font-family: 'Courier New', Courier, monospace; text-align: center; color: grey;">FEATURED STORIES</h1>
     </div>
     <div>
+      <a href="https://www.olympic.org/news/-a-much-better-rio-de-janeiro-after-the-olympic-games">
       <img src="images/2.jpg">
+      </a>
     </div>
     <div>
+      <a href="https://www.olympic.org/news/volunteer-finds-inspiration-and-life-changing-experiences-at-rio-2016">
       <img src="images/3.jpg">
+    </a>
     </div>
     <div>
       <h1 style="font-family: 'Courier New', Courier, monospace; text-align: center; color: grey;">GALLERY</h1>
@@ -125,13 +136,20 @@
 </body>
 <!-- <br>
 <br> -->
+<hr>
 
 <footer>
 
-    <p style="font-size: large;">Prepared by : Amartya Dixit</p>
+    <p style="font-size: large";>Prepared by : Amartya Dixit</p>
     <div>
       <span style="font-size: large;">For more, you can contact at - </span> <a href="mailto:amartyadixit02@gmail.com"><button><span
             class="material-icons">email</span></button></a>
+            <br> <br> <br>
+            <address>
+              12 - A Sindhi Colony Garam Sadak <br>
+              Morar , Gwalior <br>
+              Pin Code - 474006 <br>
+            </address>
     
   </div>
 
