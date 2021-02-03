@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Tally</title>
+
+    <style>
+        ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 12px;
+       overflow: hidden;
+       background-color:white;
+       font-family:sans-serif ;
+     }
+ 
+     li {
+       float: right;
+     }
+ 
+     li a {
+       display: block;
+       color: black;
+       text-align: center;
+       padding: 14px 16px;
+       /*14px 16px 17px 18px   ( top , right, bottom, left)*/
+       text-decoration: none;
+     }
+     a:active {
+       background-color: green;
+     }
+     body, html {
+       height: 100%;
+       margin: 0;
+       font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+     .hero-image {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("medal1.jpg");
+       height: 80%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       }
+
+   .hero-text {
+       text-align: left;
+       position: relative;
+       top: 23%;
+       left: 55%;
+       transform: translate(-50%, -50%);
+       color: white;
+       }
+
+   .content1 {
+       margin-left: 7%;
+   }
+   .gallery1 {
+       margin-left: 7%;
+   }
+   .featured1 {
+       margin-left: 7%;
+   }
+   </style>
+</head>
+<body>
+    <a href="https://www.olympic.org/">
+        <img src="images/Screenshot 2020-11-01 113949.jpg"> </a>
+
+        <ul>
+            <li><b><a class="active" href="About.html">ABOUT</a></b></li>
+            <li><b><a href="venues.html">VENUES</a></b></li>
+            <li><b><a href="book.html">BOOK A TICKET</a></b></li>
+            <li><b><a href="medal-tally.html">MEDAL TALLY</a></b></li>
+            <li><b><a href="Athletes">ATHLETES</a></b></li>
+            <li><b><a href="teams">TEAMS</a></b></li>
+            <li><b><a href="listofsports.html">SPORTS</a></b></li>
+            <li><b><a href="index(2).html">HOME</a></b></li>
+          </ul>
+          <hr>
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">MEDAL-TALLY</h1>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Country</th>
+                <th scope="col">Gold</th>
+                <th scope="col">Silver</th>
+                <th scope="col">Bronze</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>United States</td>
+              <td style="background-color: goldenrod;">46</td>
+              <td style="background-color: silver;">37</td>
+              <td style="background-color: rgba(158, 62, 62, 0.699);">38</td>
+              <td>121</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Great Britain</td>
+                <td style="background-color: goldenrod;">27</td>
+                <td style="background-color: silver;">23</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">17</td>
+                <td>67</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>China</td>
+                <td style="background-color: goldenrod;">26</td>
+                <td style="background-color: silver;">18</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">26</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Russia</td>
+                <td style="background-color: goldenrod;">19</td>
+                <td style="background-color: silver;">17</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">20</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td> Germany</td>
+                <td style="background-color: goldenrod;">17</td>
+                <td style="background-color: silver;">10</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">15</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Japan</td>
+            <td style="background-color: goldenrod;">12</td>
+            <td style="background-color: silver;">8</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">21</td>
+            <td>41</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>France</td>
+                <td style="background-color: goldenrod;">10</td>
+                <td style="background-color: silver;">18</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">14</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>South Korea</td>
+                <td style="background-color: goldenrod;">9</td>
+                <td style="background-color: silver;">3</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">9</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Italy</td>
+                <td style="background-color: goldenrod;">8</td>
+                <td style="background-color: silver;">12</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">8</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Australia</td>
+                <td style="background-color: goldenrod;">8</td>
+                <td style="background-color: silver;">11</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">10</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Netherlands</td>
+                <td style="background-color: goldenrod;">8</td>
+                <td style="background-color: silver;">7</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">4</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Hungary</td>
+                <td style="background-color: goldenrod;">8</td>
+                <td style="background-color: silver;">3</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">4</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Brazil*</td>
+                <td style="background-color: goldenrod;">7</td>
+                <td style="background-color: silver;">6</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">6</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>Espania</td>
+            <td style="background-color: goldenrod;">7</td>
+            <td style="background-color: silver;">4</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">6</td>
+            <td>17</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>Kenya</td>
+            <td style="background-color: goldenrod;">6</td>
+            <td style="background-color: silver;">6</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">1</td>
+            <td>13</td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>Jamaica</td>
+            <td style="background-color: goldenrod;">6</td>
+            <td style="background-color: silver;">3</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">2</td>
+            <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td>Croatia</td>
+                <td style="background-color: goldenrod;">5</td>
+                <td style="background-color: silver;">3</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">2</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td>Cuba</td>
+                <td style="background-color: goldenrod;">5</td>
+                <td style="background-color: silver;">2</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">4</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">18</th>
+                <td>New Zeland</td>
+            <td style="background-color: goldenrod;">4</td>
+            <td style="background-color: silver;">9</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">5</td>
+            <td>18</td>
+              </tr>
+              <tr>
+                <th scope="row">19</th>
+                <td>Canada</td>
+                <td style="background-color: goldenrod;">4</td>
+                <td style="background-color: silver;">3</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">8</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
+                <td>Uzbekistan</td>
+                <td style="background-color: goldenrod;">4</td>
+                <td style="background-color: silver;">2</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">7</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <th scope="row">21</th>
+                <td>Kazakhstan</td>
+            <td style="background-color: goldenrod;">3</td>
+            <td style="background-color: silver;">5</td>
+            <td style="background-color: rgba(158, 62, 62, 0.699);">10</td>
+            <td>18</td>
+              </tr>
+              <tr>
+                <th scope="row">22</th>
+                <td>Colombia</td>
+                <td style="background-color: goldenrod;">3</td>
+                <td style="background-color: silver;">2</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">23</th>
+                <td>Switzerland</td>
+                <td style="background-color: goldenrod;">3</td>
+                <td style="background-color: silver;">2</td>
+                <td style="background-color: rgba(158, 62, 62, 0.699);">2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <th scope="row">24</th>
+                <td>Iran</td>
+                <td>3</td>
+                <td>1</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">25</th>
+                <td>Greece</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">26</th>
+                <td>Argentina</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">27</th>
+                <td>Denmark</td>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th scope="row">28</th>
+                <td>Sweden</td>
+                <td>2</td>
+                <td>6</td>
+                <td>3</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">29</th>
+                <td>South Africa</td>
+                <td>2</td>
+                <td>6</td>
+                <td>2</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th scope="row">30</th>
+                <td>Ukraine</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">31</th>
+                <td>Serbia</td>
+                <td>2</td>
+                <td>4</td>
+                <td>2</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">32</th>
+                <td>Poland</td>
+                <td>2</td>
+                <td>3</td>
+                <td>6</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">33</th>
+                <td>North Korea</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <th scope="row">34</th>
+                <td>Belgium</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">35</th>
+                <td>Thailand</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">36</th>
+                <td>Georgia</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <th scope="row">37</th>
+                <td>Azerbaijan</td>
+                <td>1</td>
+                <td>7</td>
+                <td>10</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <th scope="row">38</th>
+                <td>Belarus</td>
+                <td>1</td>
+                <td>4</td>
+                <td>4</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <th scope="row">39</th>
+                <td>Turkey</td>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">40</th>
+                <td>Armenia</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">41</th>
+                <td>Czech Republic</td>
+                <td>1</td>
+                <td>2</td>
+                <td>7</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th scope="row">42</th>
+                <td>Ethopia</td>
+                <td>1</td>
+                <td>2</td>
+                <td>5</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">43</th>
+                <td>Slovenia</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">44</th>
+                <td>Indonesia</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">45</th>
+                <td>Romania</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">46</th>
+                <td>Baharain</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">47</th>
+                <td>Vietnam</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">48</th>
+                <td>Chinese Taipei</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">49</th>
+                <td>Bahamas</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">50</th>
+                <td>Independent Olympic Athletes</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">51</th>
+                <td>Ivory Coast</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">52</th>
+                <td>Fiji</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">53</th>
+                <td>Jordan</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">54</th>
+                <td>Kosovo</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">55</th>
+                <td>Puerto Rico</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">56</th>
+                <td>Singapore</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">57</th>
+                <td>Tajakistan</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">59</th>
+                <td>Malaysia</td>
+                <td>0</td>
+                <td>4</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th scope="row">60</th>
+                <td>Mexico</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th scope="row">61</th>
+                <td>Venezuela</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">62</th>
+                <td>Algeria</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">63</th>
+                <td>Ireland</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">64</th>
+                <td>Lithuania</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">65</th>
+                <td>Bulgaria</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">66</th>
+                <td>India</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">67</th>
+                <td>Mongolia</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">68</th>
+                <td>Burundi</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th scope="row">69</th>
+                <td>Grenada</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">70</th>
+                <td>Niger</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">71</th>
+                <td>Phillippines</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">72</th>
+                <td>Qatar</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">73</th>
+                <td>Norway</td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">74</th>
+                <td>Egypt</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">74</th>
+                <td>Tunisia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">75</th>
+                <td>Israel</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">76</th>
+                <td>Austria</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">77</th>
+                <td>Dominican Republic</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">78</th>
+                <td>Estonia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">79</th>
+                <td>Finland</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">80</th>
+                <td>Morocco</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">81</th>
+                <td>Nigeria</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">82</th>
+                <td>Portugal</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">83</th>
+                <td>Trinidad and Tobago</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">84</th>
+                <td>United Arab Emirates</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+            </tbody>
+          </table>
+</body>
+</html>
