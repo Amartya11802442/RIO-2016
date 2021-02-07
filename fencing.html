@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FENCING</title>
+    <style>
+        ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 12px;
+       overflow: hidden;
+       background-color:white;
+       font-family:sans-serif ;
+     }
+ 
+     li {
+       float: right;
+     }
+ 
+     li a {
+       display: block;
+       color: black;
+       text-align: center;
+       padding: 14px 16px;
+       /*14px 16px 17px 18px   ( top , right, bottom, left)*/
+       text-decoration: none;
+     }
+     a:active {
+       background-color: green;
+     }
+     body, html {
+       height: 100%;
+       /* margin: 0; */
+       font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+     .hero-image {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fencing.jpg");
+       height: 80%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       }
+
+   .hero-text {
+       text-align: left;
+       position: relative;
+       top: 23%;
+       left: 55%;
+       transform: translate(-50%, -50%);
+       color: white;
+       }
+
+   .content1 {
+       margin-left: 7%;
+       /* border: 2px solid black; */
+       width: 500px;
+       float: left;
+   }
+   .side_box{
+    /* border: 2px solid black; */
+       width: 500px;
+       margin-left: 750px;
+       height: 600px;
+       text-align: right;
+       padding-top: 15px;
+       
+
+   }
+   .gallery1 {
+       margin-left: 10%;
+   }
+   .featured1 {
+       margin-left: 10%;
+   }
+
+   #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 60%;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+    }
+   
+   </style>
+</head>
+<body>
+    <a href="https://www.olympic.org/">
+        <img src="images/Screenshot 2020-11-01 113949.jpg"> </a>
+
+        <ul>
+            <li><b><a class="active" href="About(1).html">ABOUT</a></b></li>
+            <li><b><a href="venues.html">VENUES</a></b></li>
+            <li><b><a href="book.html">BOOK A TICKET</a></b></li>
+            <li><b><a href="medal-tally.html">MEDAL TALLY</a></b></li>
+            <li><b><a href="athletes.html">ATHLETES</a></b></li>
+            <li><b><a href="teams">TEAMS</a></b></li>
+            <li><b><a href="listofsports.html">SPORTS</a></b></li>
+            <li><b><a href="index(2).html">HOME</a></b></li>
+          </ul>
+          <hr>
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">FENCING</h1>
+            </div>
+          </div>
+          <br>
+          <br>
+          <hr>
+          
+         
+          <div class="content1" style="float: left;">
+          <h2 style="text-align: left;">
+            SWORDPLAY HAS BEEN PRACTISED FOR THOUSANDS OF YEARS, AND MODERN DAY FENCING BEGAN AS A FORM OF MILITARY TRAINING. IT DID NOT BECOME A SPORT UNTIL AROUND THE 15TH CENTURY.</h2>
+            <br>
+            <p style="font-size: 25px;"><b>SWORD FIGHTING AND DUELS</b></p>
+            <p style="font-family: sans-serif;">
+                Beach volleyball first appeared in the early 1920s in Santa Monica, California. Then what started out as just some family fun became a sport spreading rapidly across the world.
+                By the 1930s, the game had reached countries like Czechoslovakia, Latvia and Bulgaria.
+            </p>
+            <br>
+            <p style="font-size: 25px;"><b>BIRTH OF THE SPORT</b></p>
+            <p style="font-family: sans-serif;">
+                Much like today, the ancient Olympic Games included a wide variety of track and field events.<br>
+                Such events included longer foot races, a race in armour, and a pentathlon event that<br>
+                consisted of the “stadium” race, long jump, discus throw, javelin throw and wrestling.<br>
+            </p>
+            
+            
+            </div>
+            
+            <div class="side_box">
+              <p style="font-size: 25px;"><b>Events</b></p>
+              <hr>
+              <p>ÉPÉE INDIVIDUAL MEN</p>
+               <p>ÉPÉE TEAM MEN</p> 
+               <p>FOIL INDIVIDUAL MEN</p> 
+               <p>SABRE INDIVIDUAL MEN</p> 
+                <p>SABRE TEAM MEN</p>
+               <p>ÉPÉE INDIVIDUAL WOMEN</p> 
+                <p>FOIL INDIVIDUAL WOMEN</p>
+               <p>FOIL TEAM WOMEN</p> 
+                <p>SABRE INDIVIDUAL WOMEN</p>
+                <p>SABRE TEAM WOMEN</p> 
+            </div>
+           
+<br>
+<br>
+<br>
+            <hr>
+            <br>
+        <div class="gallery1">
+        <p style="font-size: 26px;"><b>GALLERY</b></p>
+        <img src="images/fencing1.png">
+        <br>
+        </div>
+        <hr>
+        <br>
+
+        <div class="featured1">
+        <p style="font-size: 26px;"><b>FEATURED ATHLETES</b></p>
+        <br>
+        <img src="images/fencing2.png">
+
+
+        </div>
+       
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+</html>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
